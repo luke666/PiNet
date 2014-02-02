@@ -9,14 +9,14 @@
     two network areas and then blinking/lighting one of the three LEDs according to reachable area/address.
 
     The LEDs are connected to Raspberry Pi GPIO pins 11 (GPIO17), 13 (GPIO 27 on board rev. 2) and 15 (GPIO 22).
-    Each LED is then connected to pin 14 (GND) over an 820R resistor. Schemes and instructions can be found on Internet.
+    Each LED is then connected to pin 14 (GND) over an 820R resistor. Schemes and instructions can be found on
+    Internet. To access the GPIO pins you need to run the script as a superuser.
 
     If the script can reach IP addresses defined in "netIP" list (or at least one of them), the green LED blinks for
     each successfully reached IP address and then remains lit for defined "timeOut" until next check.
 
-    If none of "netIP" addresses can be reached, the script tries to reach "wanIP" addresses. If the script can reach them
-    (or at least one of them), the yellow LED blinks for each successfully reached IP address and then remains lit
-    for defined "timeOut" until next check.
+    If none of "netIP" addresses can be reached, the script tries to reach "wanIP" addresses. If the script can reach 	them (or at least one of them), the yellow LED blinks for each successfully reached IP address and then remains
+    lit for defined "timeOut" until next check.
 
     If the script can't reach any "netIP" and "wanIP" address the red LED lights for defined "timeOut" until next check.
     
